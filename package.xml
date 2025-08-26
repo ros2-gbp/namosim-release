@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>namosim</name>
+  <version>0.0.1</version>
+  <description>A navigation planner for Navigation Among Movable Obstacles (NAMO)</description>
+  <maintainer email="david.brown@inria.fr">David Brown</maintainer>
+  <maintainer email="davewbrwn@gmail.com">David Brown</maintainer>
+  <maintainer email="jacques.saraydaryan@cpe.fr">Jacques Saraydaryan</maintainer>
+  <license>MIT</license>
+  <depend>black</depend>
+  <depend>geometry_msgs</depend>
+  <depend>grid_map</depend>
+  <depend>grid_map_msgs</depend>
+  <depend>jupyter-notebook</depend>
+  <depend>libcairo2-dev</depend>
+  <depend>libopencv-dev</depend>
+  <depend>python3-bidict</depend>
+  <depend>python3-cairosvg</depend>
+  <depend>python3-jsonpickle</depend>
+  <depend>python3-matplotlib</depend>
+  <depend>python3-numpy</depend>
+  <depend>python3-opencv</depend>
+  <depend>python3-pandas</depend>
+  <depend>python3-pil</depend>
+  <depend>python3-pre-commit</depend>
+  <depend>python3-pydantic</depend>
+  <depend>python3-pytest-cov</depend>
+  <depend>python3-pytest</depend>
+  <depend>python3-requests</depend>
+  <depend>python3-shapely</depend>
+  <depend>python3-skimage</depend>
+  <depend>python3-sphinx-copybutton</depend>
+  <depend>python3-sphinx-rtd-theme</depend>
+  <depend>python3-sphinx</depend>
+  <depend>python3-tk</depend>
+  <depend>python3-typer</depend>
+  <depend>python3-typing-extensions</depend>
+  <depend>rclpy</depend>
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
