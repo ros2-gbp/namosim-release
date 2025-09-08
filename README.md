@@ -6,74 +6,28 @@
 
 NAMOSIM is a robot motion planner designed for the problem of navigation among movable obstacles (NAMO). It simulates mobile robots navigating in 2D polygonal environments in which certain obstacles can be grabbed and relocated. It currently supports **holonomic** and **differential drive** motion models. A variety of agent types are implemented, including primarily our **Stilman2005** baseline agent. New agents utilizing alternative algorithmic approaches can be created and plugged into the planner in a straightforward manner by implementing the **Agent** base class.
 
-## System Requirements
-
-- Ubuntu 22.04
-- ROS2 Humble
-
-## Setup
-
-First, clone the repo and `cd` into it.
-
-Next, use `rosdep` to install the dependencies listed in the `package.xml` file:
-
-```bash
-rosdep install --from-paths . -r -y
-```
-
-Some dependencies are only available as pip packages. Please install them with:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-You can launch a scenario as follows
-
-```bash
-python3 -m namosim.main run tests/scenarios/minimal_stilman_2005.svg
-```
-
-The best way to experiment with other scenarios is to open the repo in VSCode and use the python test explorer to run the `e2e` tests.
-
-Alternatively you can launch a test from the command line like so:
-
-```bash
-python3 -m pytest tests/e2e/e2e_test.py::TestE2E::test_social_dr_success_d
-```
-
-### Run a Basic Scenario and Visualize in RVIZ
-
-The following example runs the most basic scenario with the (Stillman,2005) algorithm and assumes you have `ROS2` and `RViz2` installed.
-
-Start rviz2:
-
-```bash
-rviz2 -d rviz/basic_view.rviz
-```
-
-Then, in a new terminal, run:
-
-```bash
-python3 -m pytest tests/e2e/e2e_test.py::TestE2E::test_social_dr_success_d
-```
-
-## Run Unit Tests
-
-```bash
-./scripts/test_unit.sh
-```
-
 ## Documentation
 
-You can find the docs site [here](https://chroma-citi.github.io/namosim/).
+Please check out the [docs site](https://chroma-citi.github.io/namosim/) for installation and usage instructions.
 
 To build the docs site locally, run:
 
 ```bash
 ./scripts/make_docs.sh
 ```
+
+# Demos
+
+Here are a couple demo videos applying namosim on real and simulated robots.
+
+#### NAMOSIM on a Turtlebo
+
+[![NAMOSIM on Turtlebot](docs/source/_static/namo_demo_thumbnail.png)](https://youtu.be/076ecBfaBTw)
+
+
+#### NAMOSIM on Multiple Robots in Gazebo
+
+[![NAMOSIM on Multiple Robots in Gazebo](docs/source/_static/multi_robot_demo_thumbnail.png)](https://youtu.be/qgPz69Dk9bc)
 
 ## Authors
 
@@ -93,7 +47,7 @@ To build the docs site locally, run:
 
 ## Cite Us
 
-If you reuse any of the provided data/code, please cite the associated papers:
+If you reuse any part of this project in your research, please cite the associated papers:
 
 ```bibtex
 @inproceedings{renault:hal-04705395,

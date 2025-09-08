@@ -6,4 +6,6 @@ DIR=$(dirname "$0")
 cd $DIR/..
 
 export NAMO_DEACTIVATE_TKINTER="TRUE"
-python3 -m pytest -s --cov=namosim --cov-fail-under=27 tests/unit
+export NAMO_DEACTIVATE_RVIZ="TRUE"
+
+./examples/compute_plan.sh
