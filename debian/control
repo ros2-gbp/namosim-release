@@ -1,0 +1,12 @@
+Source: ros-humble-namosim
+Section: misc
+Priority: optional
+Maintainer: David Brown <david.brown@inria.fr>
+Build-Depends: debhelper (>= 9.0.0), black, jupyter-notebook, libcairo2-dev, libopencv-dev, pre-commit, python3-bidict, python3-cairosvg, python3-jsonpickle, python3-matplotlib, python3-numpy, python3-opencv, python3-pandas, python3-pil, python3-pydantic, python3-pytest, python3-pytest-cov, python3-requests, python3-shapely, python3-skimage, python3-tk, python3-typer, python3-typing-extensions, ros-humble-geometry-msgs, ros-humble-grid-map, ros-humble-grid-map-msgs, ros-humble-rclpy, ros-humble-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-namosim
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, black, jupyter-notebook, libcairo2-dev, libopencv-dev, pre-commit, python3-bidict, python3-cairosvg, python3-jsonpickle, python3-matplotlib, python3-numpy, python3-opencv, python3-pandas, python3-pil, python3-pydantic, python3-pytest, python3-pytest-cov, python3-requests, python3-shapely, python3-skimage, python3-tk, python3-typer, python3-typing-extensions, ros-humble-geometry-msgs, ros-humble-grid-map, ros-humble-grid-map-msgs, ros-humble-rclpy, ros-humble-ros-workspace
+Description: A navigation planner for Navigation Among Movable Obstacles (NAMO)
